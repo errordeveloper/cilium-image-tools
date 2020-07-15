@@ -1,4 +1,4 @@
-name: Images in GitHub
+name: Images test
 on: [push]
 
 jobs:
@@ -20,4 +20,4 @@ jobs:
           ANY_REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         with:
           entrypoint: make
-          args: iproute2-image PUSH=true REGISTRIES=docker.pkg.github.com/errordeveloper/cilium-image-tools-2
+          args: iproute2-image PUSH=true REGISTRIES=docker.pkg.github.com/errordeveloper/cilium-image-tools
